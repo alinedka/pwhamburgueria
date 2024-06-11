@@ -56,6 +56,10 @@ html {
     font-weight: 500;
 }  
 
+.content .list-menu a:active {
+    color: #8c626f;
+}
+
 .first-section {
     width: 100vw;
     height: 100vh;
