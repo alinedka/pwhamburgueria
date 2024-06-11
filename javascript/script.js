@@ -1,12 +1,16 @@
-let show = true;
-const menuContent = document.querySelector('.content');
-const menuToggle = menuContent.querySelector('.menu-toggle');
+document.addEventListener('DOMContentLoaded', function () {
+    var currentPath = window.location.pathname;
+    currentPath = currentPath.substring(currentPath.lastIndexOf('/') + 1);
 
 
-menuToggle.addEventListener('click', () => {
+    var navLinks = document.querySelectorAll('.content .list-menu li a');
 
-    document.body.style.overflow = show ? 'hidden' : 'initial'
+    navLinks.forEach(function(link) {
+        var linkPath = link.pathname;
+        linkPath = linkPath.substring(linkPath.lastIndexOf('/') + 1);
 
-    menuContent.classList.toggle('on', show);
-    show = !show;
-})
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+        }
+    });
+});
