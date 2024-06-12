@@ -10,19 +10,56 @@
 <body>
     <header class="content">
         <div class="logo">
-            <img src="/assets/logobranca.png" />
+            <img src="/assets/logobranca.png" alt="Logo da Hamburgueria">
         </div>
-    <nav>
-        <ul class="list-menu">
+        <nav>
+            <ul class="list-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobrenos.html">Sobre Nós</a></li>
                 <li><a href="cardapio.html">Cardápio</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="https://www.instagram.com/obaraohamburgueriatupa/"><i class="bi bi-instagram"></i></a></li>
                 <li><a href="#"><i class="bi bi-cart3"></i></a></li>
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+        <script src="scripts/script.js"></script>
+    </header>
+<br><br><br><br><br><br>
+    <section class="contact-section">
+        <h1>Entre em Contato Conosco</h1>
+        <div class="contact-info">
+            <p><i class="bi bi-geo-alt-fill"></i> Av. Tamoios, 1240 - Centro, Tupã - SP</p>
+            <p><i class="bi bi-telephone-fill"></i> (14)99785-2679 </p>
+            <p><i class="bi bi-envelope-fill"></i> contato.barao@gmail.com</p>
+        </div>
+        <form method="post" class="contact-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
     <script src="scripts/script.js"></script>
-</header>
+    <script>
+        document.querySelector('.contact-form').addEventListener('submit', function(event) {
+            let nome = document.getElementById('nome').value;
+            let email = document.getElementById('email').value;
+            let mensagem = document.getElementById('mensagem').value;
+    
+            if (!nome || !email || !mensagem) {
+                alert('Por favor, preencha todos os campos.');
+                event.preventDefault();  // Impede o envio do formulário
+            }
+        });
+    </script>
+    
 </body>
 </html>
+
