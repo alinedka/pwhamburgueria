@@ -14,6 +14,7 @@ html {
     height: 100vh;
     font-size: 62.5%;
     overflow-x: hidden;
+    background-color: #ffffff;
 }
 
 /* Menu */
@@ -25,7 +26,10 @@ html {
     align-items: center;
     background: #221015;
     position: fixed;
+    top: 0;
+    left: 0;
     padding-left: 5rem;
+    z-index: 1000;
 }
 
 .logo {
@@ -61,29 +65,55 @@ html {
     color: #8c626f; 
 }
 
-.first-section {
+.barao { 
+    padding: 30px;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 130px; 
 }
 
-
-/* Primeira Seção */
-.first-section {
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../../assets/foto1.png);
-    background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat;
+.sobre {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
+
+.sobre img {
+    margin: -450px;
+    width: auto; 
+    height: 550px; 
+    margin-left: 220px; 
+
+}
+
+
+.sobre h1 {
+    padding: 30px;
+    margin-bottom: 60px; 
+    font-size: 45px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    color: #5a3841;
+}
+
+
+.sobre h2{
+    width: 25vw;
+    margin-right: 30pc;
+    margin-bottom: -8pc;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
 
 @media (max-width: 1200px) {
     /*Ajuste para telas menores*/
@@ -103,62 +133,4 @@ html {
     .first-section {
         background-size: 50% auto; 
     }
-}
-
-
-.first-section .conteudo-principal{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.first-section h1{
-    color: white;
-    font-size: 6rem;
-    text-transform: uppercase;
-    margin-bottom: 5rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/*enzo edit*/
-
-.barao{
-    margin: 0 auto;    
-    padding-right: 1300px;
-    transform: translate(250px);
-    text-align: center;
-    padding: 200px;
-    padding-top: 200px;
-    padding-right: 700px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 33px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-.sobre h3{
-    padding: 100px, 100px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    transform: translate(450px, 10);
-    background-color: #221015;
-    color: white;
-}
-.ifood{
-    padding: 100px, 100px;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    transform: translate(450px, 10);
-}
-.insta{
-    padding: 100px, 100px;
-    margin: 0 auto;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    transform: translate(450px, 10);
 }

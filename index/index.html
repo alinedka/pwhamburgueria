@@ -19,11 +19,22 @@
                 <li><a href="cardapio.html">Cardápio</a></li>
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="https://www.instagram.com/obaraohamburgueriatupa/"><i class="bi bi-instagram"></i></a></li>
-                <li><a href="#"><i class="bi bi-cart3"></i></a></li>
+                <li><a href="https://wa.me/c/5514997852679"><i class="bi bi-cart3"></i></a></li>
 
             </ul>
         </nav>
-        <script src="scripts/script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Seleciona o botão
+                var button = document.querySelector('.pedir');
+    
+                // Adiciona um event listener para o clique no botão
+                button.addEventListener('click', function() {
+                    // Redireciona para o link desejado
+                    window.location.href = 'cardapio.html';
+                });
+            });
+        </script>
     </header>
     
     <section class="first-section">
@@ -35,6 +46,14 @@
         </div>
 
     </section>
+
+
+    <footer id="footer">
+        <h1 id="h1-footer">VENHA NOS VISITAR!</h1>
+        <p class="p1-footer">Av. Tamoios, 1240 - Centro, Tupã - SP</p>
+        <p class="p1-footer">Horário de funcionamento: De segunda a sábado das 18:30 às 23:45</p>
+        <p class="p1-footer">Desenvolvido por Aline Douaki, Anna Clara Nunes, Enzo de Oliveira, João Lucas</p>
+    </footer>
     
 </body>
 </html>

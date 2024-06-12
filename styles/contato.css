@@ -14,6 +14,7 @@ html {
     height: 100vh;
     font-size: 62.5%;
     overflow-x: hidden;
+    background-color: #5a3841;
 }
 
 /* Menu */
@@ -57,31 +58,7 @@ html {
 }  
 
 .content .list-menu a:active {
-    color: #8c626f; 
-}
-
-.first-section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* Primeira Seção */
-.first-section {
-    height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(../../assets/foto1.png);
-    background-position: center;
-    background-size: cover; 
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: #8c626f;
 }
 
 @media (max-width: 1200px) {
@@ -104,22 +81,6 @@ html {
     }
 }
 
-
-.first-section .conteudo-principal{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.first-section h1{
-    color: white;
-    font-size: 6rem;
-    text-transform: uppercase;
-    margin-bottom: 5rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 .contact-section {
     padding: 80px;
     padding-top: 140px;
