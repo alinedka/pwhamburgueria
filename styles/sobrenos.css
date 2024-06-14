@@ -85,10 +85,10 @@ html {
 }
 
 .sobre img {
-    margin: -450px;
+    margin: -350px;
     width: auto; 
-    height: 550px; 
-    margin-left: 220px; 
+    height: 500px; 
+    margin-left: 300px; 
 
 }
 
@@ -105,7 +105,7 @@ html {
 
 
 .sobre h2{
-    width: 25vw;
+    width: 30vw;
     margin-right: 30pc;
     margin-bottom: -8pc;
     font-size: 24px;
